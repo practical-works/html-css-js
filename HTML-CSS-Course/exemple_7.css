@@ -1,0 +1,107 @@
+body
+{
+	font-family: 'Lucida Sans';
+	background-color: #EAEFF7;
+	margin: 0px 0px;
+	color: gray;
+}
+form
+{
+	border-radius: 20px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	box-sizing: border-box;
+	margin: 30px auto;
+	padding: 10px 50px;
+	width: 30%;
+	background-color: white;
+	transition: box-shadow 1s;
+	height: 550px;
+	overflow-y: scroll;
+}
+form:hover
+{
+	box-shadow: 0 5px 35px #498AF4;
+}
+label
+{
+	font-weight: bold;
+}
+input[ type="submit"]
+{
+	color: white;
+	background-color: #498AF4;
+	font-weight: bold;
+	padding: 10px 20px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	width: 50%;
+	display: block;
+	margin: 0px auto;
+	font-size: 90%;
+}
+input, textarea, select
+{
+	font-size: 120%;
+	font-weight: normal;
+	padding: 5px 10px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	width: 90%;
+	box-shadow: 0px 0px 5px gray inset;
+}
+input[type="radio"], input[type="checkbox"]
+{
+	width: initial;
+}
+ .pref label
+ {
+ 	text-align: justify;
+ 	font-size: 70%;
+ }
+.pref label:hover
+{
+	background-color: #EAEFF7;
+}
+input[type="submit"]:hover
+{
+	background-color: #275BAA;
+	animation-name: flash;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-direction: alternate;
+}
+@keyframes flash
+{
+	from {  }
+	to { box-shadow: 0px 0px 20px #498AF4; }
+}
+textarea
+{
+	width: 90%;
+	font-size: 150%;
+}
+hr
+{
+	color: gray;
+}
+fieldset
+{
+	border-radius: 10px;
+	padding: 20px;
+	border-style: solid;
+	font-weight: bold;
+	transition: background-color 2s, box-shadow 2s, border-color 2s, color 2s;
+}
+fieldset:hover
+{
+	
+	background-color: rgba(255, 69, 0, 0.2);
+	box-shadow: 0px 0px 20px orangered;
+	border-color: orangered;
+	color: orangered;
+}
+input[ type="radio" ], input[ type="checkbox" ]
+{
+	box-shadow: 0px 0px 5px black;
+}

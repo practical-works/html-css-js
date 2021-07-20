@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[FormTest]</title>
+	<meta charset="utf-8">
+</head>
+<body onload="confirm('What''s up ?)">
+	<form id="myForm" >
+		<label id="label1" for="text1">Text : </label>
+		<input type="text" id="text1">
+		<br />
+		<br />
+		<select id="select1">
+			<option value="no">-- No Option --</option>
+			<option value="option1" selected>First option</option>
+			<option value="option2">Second option</option>
+			<option value="option3">Third Option</option>
+		</select>
+		<br />
+		<br />
+		<input type="checkbox" name="boxes" id="checkbox1" value="box1"><label for="checkbox1">First box</label>
+		<input type="checkbox" name="boxes" id="checkbox2" value="box2"><label for="checkbox2">Second box</label>
+		<input type="checkbox" name="boxes" id="checkbox3" value="box3"><label for="checkbox3">Third box</label>
+		<br />
+		<br />
+		<input type="radio" name="balls" id="radio1" value="ball1" onclick="test2(this)">
+		<label for="radio1">First ball</label>
+		<input type="radio" name="balls" id="radio2" value="ball2" onclick="test2(this)"">
+		<label for="radio2">Second ball</label>
+		<input type="radio" name="balls" id="radio3" value="ball3" onclick="test2(this)"">
+		<label for="radio3">Third ball</label>
+		<br />
+		<br />
+		<label for="text2">Special Text: </label>
+		<input type="text" id="text2">
+		<br />
+		<br />
+		<input type="button" id="button1" value="OK" onclick="test()">
+		<br />
+		<br />
+		<label id="result">( NULL )</label>
+	</form>
+	<script type="text/javascript">
+		function test()
+		{
+			var msg = "";
+			msg += "<b>Typed Text : </b>" + document.forms["myForm"]["text1"].value;
+			msg += "<br /><br /><b>Selected Option Value : </b>" + document.forms[0]["select1"].value;
+			msg += "<br /><b>Selected Option Index : </b>" + document.forms[0]["select1"].selectedIndex;
+			msg += "<br /><b>Selected Option Text : </b>" + document.forms[0]["select1"].innerText;
+			msg += "<br /><br /><b>Checked Boxes : </b>";
+			if (document.forms[0]["checkbox1"].checked)
+				msg += document.forms[0]["boxes"][0].value + ", ";
+			if (document.forms[0]["boxes"][1].checked)
+				msg += document.forms[0]["boxes"][1].value + ", ";
+			if (document.forms[0]["boxes"][2].checked)
+				msg += document.forms[0]["boxes"][2].value;
+			msg += "<br /><br /><b>Ball : </b>" + document.forms[0]["balls"].value + "<br />";
+
+			document.getElementById("result").innerHTML = msg;
+		}
+		function test2(radio) {
+			if (radio.value == "ball1"){
+				radio.form["text2"].disabled = false;
+				radio.form["text2"].value = radio.value;
+			}
+			if (radio.value == "ball2") {
+
+				radio.form["text2"].disabled = true;
+				radio.form["text2"].value = "";
+			}
+			if (radio.value == "ball3") {
+				radio.form["text2"].type = "button";
+				radio.form["text2"].value = "OK";
+			}
+		}
+	</script>
+</body>
+</html>

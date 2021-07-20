@@ -1,0 +1,95 @@
+body
+{
+	font-family: 'Aref Ruqaa', serif;
+	font-size: 150%;
+	background-image: url("Fog.png"), url("Paper.jpg"); 
+	background-size: 100%;
+	background-repeat: no-repeat, no-repeat;
+	background-attachment: scroll, fixed;
+}
+H1
+{
+	font-size: 50px;
+	text-align: center;
+	border: 3px dotted black;
+	box-shadow: 0px 30px 30px black;
+
+	background: -webkit-linear-gradient(bottom right, red,green,yellow,blue); /* Safari/Chrome (from)*/
+	background: -moz-linear-gradient(180deg, red,green,yellow,blue); /* Firefox (to)*/
+	background: -o-linear-gradient(top left, red,green,yellow,blue); /* Opera (to)*/
+	background: linear-gradient(to top left, red,green,yellow,blue); /* Navigateurs modernes */
+}
+
+#div1
+{
+	text-shadow: 5px 5px 2px black;
+	text-align: justify;
+	color: white;
+}
+
+.p1
+{
+	border: 1px solid red;
+	background: linear-gradient(to right bottom, rgba(255,0,0,0.7), rgba(155,0,0,0.5), rgba(55,0,0,0.3));
+	box-shadow: 0px 0px 20px red;
+	padding: 30px;
+	width: 20%;
+	float: left;
+}
+.p2
+{
+	border: 1px solid green;
+	background: linear-gradient(to left bottom, rgba(0,255,0,0.7), rgba(0,155,0,0.5), rgba(0,55,0,0.3));
+	box-shadow: 0px 0px 20px green;
+	padding: 30px;
+	width: 20%;
+	float: right;
+}
+.p3
+{
+	border: 1px solid blue;
+	background: linear-gradient(to bottom, rgba(0,0,255,0.7), rgba(0,0,155,0.5), rgba(0,0,55,0.3));
+	box-shadow: 0px 0px 20px blue;
+	padding: 30px;
+	width: 40%;
+	margin: 0px auto;
+}
+
+
+.p_1
+{
+	border: 1px solid red;
+	background: radial-gradient(closest-side at 20% 50%, rgba(255,0,0,0.7), rgba(255,0,255,0.5), rgba(255,0,0,0.3));
+	box-shadow: 0px 0px 20px red;
+	padding: 30px;
+	width: 20%;
+	float: left;
+	clear: left;
+}
+.p_2
+{
+	border: 1px solid green;
+	background: radial-gradient(farthest-side at 20% 50%, rgba(0,255,0,0.7), rgba(0,255,255,0.5), rgba(0,255,0,0.3));
+	box-shadow: 0px 0px 20px green;
+	padding: 30px;
+	width: 20%;
+	float: right;
+}
+.p_3
+{
+	border: 1px solid blue;
+	background: radial-gradient(circle, rgba(269,0,255,0.7) 20%, rgba(0,0,155,0.5), rgba(0,223,55,0.3));
+	box-shadow: 0px 0px 20px blue;
+	padding: 30px;
+	width: 40%;
+	margin: 20% auto;
+}
+
+.p4
+{
+	border: 3px dotted black;
+	color: white;
+	text-align: center;
+	font-size: 170%;
+    background: linear-gradient(to bottom,  RGBa(0,0,0,1), RGBa(0,0,0,0)); /* Navigateurs modernes */
+}

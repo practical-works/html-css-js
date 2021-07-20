@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exemple 9</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="exemple_7.css">
+	</head>
+	<body>
+		<form method="post" action="traitement.aspx">
+			<h2 style="text-align:center">Formulaire</h2> 
+			<fieldset>
+				<legend>Connexion</legend>
+				<label for="nom">Identifiant:</label> <br>
+				<input type="text" id="nom" name="nom" autofocus="autofocus" required> <br><br>
+
+				<label for="pass">Mot de passe:</label> <br>
+				<input type="password" id="pass" name="pass" required="required">
+			</fieldset><br>
+
+			<label>Sexe</label><br>
+			<input type="radio" id="h" name="sexe" value="Homme" checked="checked">			
+			<label for="h">Homme</label> <br>
+			<input type="radio" id="f" name="sexe" value="Femme">
+			<label for="f">Femme</label> <br>
+			<br>
+
+			<label for="pays">Pays:</label> <br>
+			<select id="pays" name="pays">
+			<optgroup label="Nord Afrique">
+				<option value="mar">Maroc</option>
+				<option value="alg">Algérie</option>
+				<option value="tun">Tunisie</option>
+				<option value="lby">Libye</option>
+				<option value="mau">Mauritanie</option>
+			</optgroup>
+			<optgroup label="Rencontre Afrique-Asie">
+				<option value="egy">Égypte</option>
+				<option value="sdn">Soudan</option>
+				<option value="arb">Arabie Saoudite</option>
+				<option value="irk">Irak</option>
+				<option value="kwt">Kuwait</option>
+				<option value="syr">Syrie</option>
+				<option value="lbn">Liban</option>
+				<option value="jrn" selected="selected">Jordanie</option>
+				<option value="pal">Palestine</option>
+			</optgroup>
+			</select> <br><br>
+			<label for="naissance">Date de naissance:</label> <br>
+			<input type="date" id="naissance" name="naiss"><br><br>
+
+			<label for="email">Adresse Email:</label> <br>
+			<input type="email" id="email" name="email" autocomplete="on" placeholder="exemple@service.com" required> <br><br>
+
+			<label for="site">Site Web:</label> <br>
+			<input type="url" id="site" name="site" value="http://"> <br><br>
+
+			<label for="telephone">Numéro de téléphone</label> <br>
+			<input type="number" id="telephone" name="phone" value="212" min="0" max="999"><br><br>
+
+			<label for="sujet">Titre:</label><br>
+			<input type="text" id="sujet" name="sujet"> <br><br>
+			<label for="message">Description:</label><br>
+			<textarea id="message" name="message"></textarea> <br><br>
+
+			<div class="pref">
+			<label>Préférences:</label> <br>
+			<input type="checkbox" id="contrat" name="pref" value="Contrat" checked>			
+			<label for="contrat">J'accepte les conditions d'utilisation et la politique de confidentialité</label> <br>
+			<input type="checkbox" id="news" name="pref" value="newsletter">
+			<label for="news">Je souhaite recevoir la newsletter et d'autres emails promotionnels ou liés aux site</label><br>
+			<input type="checkbox" id="captcha" name="pref" value="Test">
+			<label for="captcha">Je ne suis pas un robot</label> <br><br>
+			</div>
+
+			<input type="submit" value="Envoyer"> <br><br>
+		</form>
+	</body>
+</html>

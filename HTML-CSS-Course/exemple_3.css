@@ -1,0 +1,69 @@
+body
+{
+	font-family: 'Yatra One', cursive;
+	font-size: 150%;
+}
+#Pikachu
+{
+	background-color: orange;
+	border: 2px solid black;
+	position: fixed;
+	right: 1%;
+	top: 2%;
+	z-index: 1;
+	opacity: 0.7;
+}
+.Division
+{
+	clear: left;
+	padding: 0px;
+	margin: 0px;
+	border: 3px solid black;
+}
+#Division1
+{
+	background-color: #FFFF99;
+	border: 3px solid black;
+	width: 300px;
+	height: 190px;
+	float: left;
+	overflow: scroll;
+}
+#Division2
+{
+	background-color: #FF9999;
+	border: 3px solid black;
+	float: right;
+}
+.Titre
+{
+	background-color: #00AB00; 
+	border: 1px solid black;
+	width: 50%;
+
+	display: inline-block;
+	text-align: center;
+}
+.Paragraphe-1
+{
+	background-color: #FF99FF;
+	border: 1px solid black;
+	position: relative;
+	z-index: 2;
+}
+.Paragraphe-2
+{
+	background-color: #99FFFF;
+	width: 300px;
+	border: 1px solid black;
+	margin: 0px auto;
+	text-align: center;
+}
+.Paragraphe-3
+{
+	width: 300px;
+	border: 3px solid green;
+	position: absolute;
+	right: 20%;
+	left: 20%;
+}

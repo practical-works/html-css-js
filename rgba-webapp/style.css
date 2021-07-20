@@ -1,0 +1,58 @@
+body {
+	background: url("back.png");
+	background-size: 80%;
+	background-attachment: fixed;
+	font-family: "Courier New", serif;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+body::after {
+	content: "By Ambratolm";
+}
+.wrapper {
+	border: 10px solid black;
+	width: 70%;
+	margin: 30px auto;
+}
+.box {
+	width: 100px; 
+	border: 10px solid black; 
+	text-align: center;
+	padding: 36px 0px;
+	display: inline-block;
+}
+.box:hover {
+	cursor: pointer;
+	background: rgba(255, 255, 0, .5); 
+	color: black;
+	border-color: rgba(0, 0, 0, .2); 
+	border-style: dotted;
+}
+.box:active {
+	cursor: help;
+	background: rgba(0, 0, 0, 0); 
+	color: rgba(0, 0, 0, 0);
+	border-color: rgba(0, 0, 0, 0);
+}
+
+.red {
+	background: rgb(100, 0, 0); 
+	border-color: red;
+	color: red;
+}
+.green {
+	background: rgb(0, 100, 0); 
+	border-color: lime;
+	color: lime;
+}
+.blue {
+	background: rgb(0, 0, 100); 
+	border-color: blue;
+	color: blue;
+}
+.alpha {
+	background: rgba(200, 200, 200, .5); 
+	border-color: rgb(100, 100, 100);
+	color: rgb(100, 100, 100);
+}
+

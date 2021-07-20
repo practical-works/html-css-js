@@ -1,0 +1,101 @@
+body
+{
+	width: 100%;
+	margin: 0px 0px;
+	text-align: center;
+	background-attachment: fixed;
+	background: linear-gradient(to bottom, #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%);
+}
+#header
+{
+	background: linear-gradient(to bottom, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%);
+}
+#footer
+{
+	background: linear-gradient(to bottom, #26558b 0%,#3a8bc2 16%,#4bb8f0 29%,#419ad6 41%,#3a84c3 49%,#6199c7 50%,#aac5de 83%,#cedbe9 100%);
+
+}
+#header, #footer
+{
+	width: 100%;
+	height: 100px;
+	margin: 0px auto;
+	overflow: hidden;
+	transition: height 1.5s, box-shadow 1.5s;
+}
+#header:hover, #footer:hover
+{
+	height: 120px;
+	filter:contrast(119%);
+	box-shadow: 0px 0px 10px black;
+}
+#bloc_gauche
+{
+	background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+}
+#bloc_central
+{
+	background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+}
+#bloc_droit
+{
+	background: linear-gradient(to bottom, #cfe7fa 0%,#6393c1 100%);
+}
+#bloc_gauche, #bloc_central, #bloc_droit
+{
+	display: inline-block;
+	width: 20%;
+	height: 200px;
+	border: 1px solid white;
+	margin: 1%;
+	transition: box-shadow 1.5s, filter 1.5s;
+}
+#bloc_gauche:hover, #bloc_central:hover, #bloc_droit:hover
+{
+	box-shadow: 10px 10px 10px black;
+	filter:brightness(200%);
+	cursor: pointer;
+	position: relative;
+	top: -10px;
+
+}
+button
+{	
+	width: 25%;
+	overflow: hidden;
+	border: 1px solid white;
+	margin: 10px;
+	padding: 10px;
+	color: white;
+	text-shadow: 0px 0px 3px white;
+	cursor: pointer;
+	background: linear-gradient(to bottom, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%);
+	transition: box-shadow 1.5s, filter 1.5s;
+}
+#menu
+{
+	display: none;
+}
+button:hover
+{	
+	filter: brightness(150%);
+	box-shadow: 0px 0px 50px white;
+	position: relative;
+	bottom: -5px;
+}
+@media screen and (max-width: 360px)
+{
+	#bloc_gauche, #bloc_central, #bloc_droit
+	{
+		width: 80%;
+	}
+	button
+	{
+		display: none;
+	}
+	#menu
+	{
+		display: initial;
+		width: 50%;
+	}
+}

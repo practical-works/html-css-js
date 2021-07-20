@@ -1,0 +1,46 @@
+body
+{
+	font-family: 'BioRhyme', serif;
+	background-image: url("g.jpg");
+	background-attachment: fixed;
+}
+h1
+{
+
+}
+
+table
+{
+	border-collapse: collapse;
+}
+#table1
+{
+	width: 50%;
+}
+
+th
+{
+	border: 1px solid black;
+	background: linear-gradient(to bottom, rgba(184,225,252,1) 0%,rgba(169,210,243,1) 10%,rgba(144,186,228,1) 25%,rgba(144,188,234,1) 37%,rgba(144,191,240,1) 50%,rgba(107,168,229,1) 51%,rgba(162,218,245,1) 83%,rgba(189,243,253,1) 100%);
+}
+td
+{
+	border: 1px solid black;
+	background: linear-gradient(to bottom, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%);
+}
+
+thead th, tfoot td
+{
+	text-transform: uppercase;
+	background: linear-gradient(to bottom, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%);	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+}
+tbody td
+{
+	width: 300px;
+}
+caption
+{
+	caption-side: bottom;
+}

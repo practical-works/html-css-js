@@ -1,0 +1,51 @@
+body
+{
+	font-family: 'Cairo', sans-serif;
+	background-color: gray;
+	font-size: 25px;
+}
+.msg
+{
+	background-color: yellow;
+	color: black;
+}
+#i
+{
+	font-family: "Bungee Shade", cursive;
+	background-color: pink;
+	color: black;
+}
+#d1
+{
+	font-style: italic;
+	font-size: 20px;
+}
+.msg_word
+{
+	color: green;
+	font-family: "Courier New", Monospace;
+	font-weight: bold;
+	font-size: 40px;
+	font-style: normal;
+	color: rgba(0,0,255,0.5);
+}
+#A
+{
+	font-size: 150%;
+	font-style: italic;
+	font-weight: 900;
+	color: #FF0011;
+	opacity: 0.7;
+	text-transform: capitalize;
+	letter-spacing: 10px;
+	word-spacing: 50px;
+}
+h1
+{
+	color: yellow;
+	text-align: center;
+	text-decoration: overline;
+	text-indent: 100px;
+	text-shadow: 20px -20px 3px black;
+	line-height: 1px;
+}

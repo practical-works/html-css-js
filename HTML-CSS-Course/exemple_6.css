@@ -1,0 +1,232 @@
+body
+{
+	font-family: 'Consolas', sans-serif;
+	background-image: url("g.jpg"); 
+	background-attachment: fixed;
+
+}
+
+#litchi
+{
+	position: fixed;
+	z-index: -100;
+	filter: drop-shadow(100px 0px 5px gray);
+	animation: walk 20s linear infinite; /* animation: <name> <duration> <timing-function> <iteration-count>; */
+}
+@keyframes walk
+{
+	0% { right: -40%; }
+	100% { right: 100%;}
+}
+
+.icons a
+{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+}
+.icons a:hover
+{
+	border: 2px solid white;
+	box-shadow: 0px 0px 30px white;
+	border-radius: 10px;
+}
+#home
+{
+	background-image: url("Icons.png");
+	background-position: -10px 0px;
+	transition: box-shadow 1s, border-radius 2s, background-color 1s;
+}
+#home:hover
+{
+	background-image: url("pikachu.png");
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-color: yellow;
+	border-radius: 200px;
+	border: 2px solid yellow;
+	box-shadow: 0px 0px 30px yellow;
+}
+#star
+{
+	left: 100px;
+	background-image: url("Icons.png");
+	background-position: -423px -310px;
+	transition: box-shadow 1s, border-radius 1s, background-color 1s, background-position 1s;
+}
+#star:hover
+{
+	background-position: -550px -310px;
+	background-color: white;
+}
+.T
+{
+	background: linear-gradient(to bottom, #8ac6e0 0%,#47b9e7 50%,#1d99c3 51%);	
+	text-align: center;
+	border: 1px solid black;
+}
+.T:hover
+{
+	background: linear-gradient(to bottom, #1d99c3 41%,#47b9e7 50%,#8ac6e0 100%);
+}
+table
+{
+	border-collapse: collapse;
+	position: relative;
+	margin: 0px auto;
+	animation: fly 1s linear infinite;
+	animation-direction: alternate;
+}
+@keyframes fly
+{
+	from { top: 7px; }
+	to { top: -7px; }
+}
+
+td
+{
+	border: 1px solid black;
+	text-align: center;
+	padding: 5px;
+	background-image: url("Paper.jpg");
+}
+td:hover
+{
+	background-image: url("g.jpg");
+}
+th
+{
+	border: 1px solid black;
+	background: linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+}
+th:hover
+{
+	background: linear-gradient(to bottom, #e2e2e2 0%,#fefefe 100%);
+}
+a:link
+{
+	color: black; 
+	text-decoration: none;
+	transition: color 1s,text-shadow 2s;
+}
+a:visited
+{
+	color: gray;
+	font-style: italic;
+}
+a:hover
+{
+	color: yellow;
+	text-decoration: underline;
+	font-style: italic;
+	text-shadow: 0px 0px 10px orange;
+}
+a:active
+{
+	font-stretch: expanded;
+}
+#pikatchu
+{
+}
+#pikachu:hover
+{
+	width: 70%;
+}
+dl
+{
+	width: 30%;
+	margin: 0px auto;
+	box-shadow: 0px 0px 50px black;
+	border: 4px double black;
+	border-radius: 20px;
+	padding: 10px;
+	font-size: 50%;
+	background: linear-gradient(45deg, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%);
+	transition: padding 1s ease, 1s box-shadow 3s ease-in;
+}
+dl:hover
+{
+	padding: 60px;
+	box-shadow: 0px 0px 100px lime;
+}
+dt
+{
+	border: 5px double black;
+	box-shadow: 0px 0px 15px black inset;
+	font-size: 220%;
+	text-align: center;
+	border-radius: 20px;
+	width: 80%;
+	margin: 0px auto;
+	transition: width 1s linear;
+}
+dt:hover
+{
+	width: 100%;
+}
+dt:first-child
+{
+	color: navy;
+	text-shadow: 0px 0px 10px navy;
+}
+dt:last-child
+{
+	color: yellow;
+	text-shadow: 0px 0px 10px yellow;
+}
+dt:nth-child(8)
+{
+	color: lime;
+	text-shadow: 0px 0px 10px lime;
+}
+dt:nth-child(odd)
+{
+	background-color: #F0F0F0;
+}
+dt:nth-child(odd):hover
+{
+	background: linear-gradient(to bottom, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%);
+	color: yellow;
+	box-shadow: 0px 0px 50px orange;
+}
+dt:nth-child(even)
+{
+	background-color: hsl(201, 11%, 30%);
+	color: white;
+}
+dt:nth-child(even):hover
+{
+	background: linear-gradient(to bottom, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%);
+	color: white;
+	box-shadow: 0px 0px 50px white;
+}
+dt::first-letter
+{
+	text-shadow: 0px 0px 3px red;
+}
+dt::first-line
+{
+
+}
+dt::-moz-selection
+{
+	background-color: red;
+}
+dt::before
+{
+	content: open-quote;
+}
+dt::after
+{
+	content: close-quote;
+}
+table::before
+{
+	content: url("ECG.png");
+}
+hr
+{
+	border: 1px double gray;
+	box-shadow: 0px 0px 20px black;
+}

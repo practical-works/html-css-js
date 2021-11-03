@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+</head>
+<body>
+  <div class="msg-box">
+    <div class="msg-box-title">Message</div>
+    <div class="msg-box-content">
+      This is an example message.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora incidunt doloremque consectetur ipsa hic deserunt totam eveniet quibusdam, ipsam? Commodi ipsum, hic reiciendis temporibus, quisquam facilis voluptas ab sequi perspiciatis.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quaerat eligendi reiciendis fuga nostrum sunt consequatur ad, dolor aperiam delectus ex odit consequuntur officiis perspiciatis alias doloremque nesciunt tempore nam!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ipsum repudiandae? Neque, libero, ut quasi error nemo quia. Magni assumenda veniam, commodi eveniet atque, dolores deleniti esse quibusdam rerum quo?
+      Are you sure about this ?
+    </div>
+    <button class="msg-box-btn">Yes</button>
+    <button class="msg-box-btn">No</button>
+  </div>
+  <article></article>
+</body>
+<style>
+body {
+  font-family: 'Century Gothic', sans-serif;
+  background: grey;
+}
+.msg-box {
+  background: silver;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px;
+  max-width: 500px;
+  margin-top: -250px;
+  margin-left: -250px;
+  /* max-height: 300px; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+.msg-box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.msg-box .msg-box-title {
+  padding: 5px 20px;
+  border-bottom: 1px solid black;
+  box-shadow: 0px 1px 0px;
+  background: skyblue;
+}
+.msg-box .msg-box-content {
+  padding: 20px;
+  margin: 20px 0;
+  /* max-height: 100px; */
+  /* overflow: auto; */
+}
+.msg-box .msg-box-btn {
+  padding: 5px 20px;
+  margin: 0 20px 15px 0;
+  background: skyblue;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px;
+  cursor: pointer;
+  float: right;
+}
+.msg-box .msg-box-btn:hover {
+  padding: 5px 20px;
+  background: yellow;
+  border: 1px solid black;
+  cursor: pointer;
+}
+</style>
+<script>
+  const article = document.querySelector("article");
+  article.style.textAlign = "center";
+  article.style.fontSize = "500%";
+  for (let i = 0; i < 100; i++) {
+    article.innerHTML += "حبيبي يا رسول الله <br />";
+  }
+</script>
+</html>

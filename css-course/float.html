@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float</title>
+</head>
+<body>
+  <h1>CSS Course</h1>
+  <div class="row">
+    <div class="col" style="background: red;">
+      Lorem ipsum dolor.
+    </div>
+    <div class="col" style="background: green;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maxime officia fugit iusto ea ex aperiam earum, doloribus debitis quae tempore sunt corporis dignissimos, molestiae, at id harum laborum odit!
+    </div>
+    <div class="col" style="background: blue;">Lorem ipsum</div>
+    <div class="col" style="background: skyblue;">Lorem ipsum</div>
+    <div class="col" style="background: yellow;">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perferendis cum quas quisquam aliquam culpa, quod, esse, recusandae voluptatibus sapiente amet. Vel repellendus perspiciatis necessitatibus, voluptas molestias ullam, hic ab.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatum et eum provident eaque eius debitis quod maiores obcaecati impedit repellendus, inventore officiis necessitatibus sint sed nobis illum. Expedita, non.</p>
+    </div>
+    <div class="col" style="background: pink;">Lorem ipsum</div>
+  </div>
+  <h1>CSS Float Property</h1>
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit ab ex, mollitia odio quos, at. Voluptates itaque blanditiis eveniet repudiandae impedit ullam accusantium debitis esse facilis recusandae, similique non dolor.
+</body>
+<style>
+.row .col {
+  float: left;
+  width: calc(100% / 3); /* One-Third */
+  height: 200px;
+}
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+@media only screen and (max-width: 800px) {
+  .row .col {
+    width: 100%;
+  }
+}
+</style>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectors</title>
+</head>
+<body style="font-family: 'Century Gothic', sans-serif; font-size: 200%;">
+  <div style="padding: 0 50px;">
+    <div>Div</div>
+    <p>Paragraph <a href="#">Link</a></p>
+    <p>Paragraph</p>
+    <section>
+      Section
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Paragraph
+      </p>
+      <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Div
+      </div>
+    </section>
+    <p>Paragraph </p>
+    <div>Div</div>
+    <div>Div</div>
+  </div>
+</body>
+<style>
+div p {
+  color: green;
+  font-weight: bold;
+}
+div > p {
+  text-decoration: underline lime 5px;
+}
+div + p {
+  border: 3px solid red;
+}
+div ~ p {
+  background: lightcyan;
+}
+div div:first-child {
+  background: black;
+  color: lime;
+}
+div div:last-child {
+  background: black;
+  color: red;
+}
+</style>
+</html>

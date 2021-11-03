@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+</head>
+<body>
+  <div class="grid">
+    <div class="cell">1</div>
+    <div class="cell">2</div>
+    <div class="cell">3</div>
+    <div class="cell">4</div>
+    <div class="cell">5</div>
+    <div class="cell">6</div>
+    <div class="cell">7</div>
+    <div class="cell">8</div>
+    <div class="cell">9</div>
+    <div class="cell">10</div>
+  </div>
+</body>
+<style>
+body {
+  font-family: "Arial Black", sans-serif;
+  font-size: 200%;
+  background: linear-gradient(grey, #333);
+}
+.grid {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 50px repeat(2, 1fr);
+  grid-template-rows: 100px 200px;
+}
+.cell:nth-child(1) {
+  grid-row: 1 / 6;
+}
+.cell:nth-child(10) {
+  grid-column: 2 / 4;
+}
+.cell {
+  background: linear-gradient(silver, #EAEAEA);
+  border: 3px solid black;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.cell:hover {
+  background: linear-gradient(lightyellow, yellow);
+  box-shadow: 1px 1px 20px yellow;
+  color: #949400;
+}
+</style>
+</html>
